@@ -1,7 +1,13 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
 
+# Set working directory
 WORKDIR /app
 
-COPY target/simple-java-maven-app-1.0-SNAPSHOT.jar /app/sam.jar
+# Copy the JAR file into the container
+COPY target/*.jar /app/sam.jar
 
-CMD ["java","-jar","/app/sam.jar" ]
+# Expose the application port
+EXPOSE 8081
+
+# Run the Java application
+CMD ["java", "-jar", "/app/sam.jar"]
