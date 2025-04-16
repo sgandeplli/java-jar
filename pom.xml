@@ -17,8 +17,8 @@
 
         <!-- SonarQube properties -->
         <sonar.projectKey>simple-java-maven-app</sonar.projectKey>
-        <sonar.host.url>http://34.122.169.9:9000</sonar.host.url>
-        <sonar.token>squ_7c47920c2c558ac7c2300ba1b786d97343509b18</sonar.token> <!-- Use token instead of login -->
+        <sonar.host.url>http://34.67.217.100:9000/</sonar.host.url>
+        <sonar.token>squ_15fc108b8e6584e6e3667018ae2355f92590ea9f</sonar.token> <!-- Use token instead of login -->
         <sonar.java.binaries>${project.build.directory}/classes</sonar.java.binaries> <!-- Add this line to specify the location of compiled classes -->
     </properties>
 
